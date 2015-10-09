@@ -1,7 +1,9 @@
 #!/bin/bash
 #
 # A script for running a productive development environment with Docker
-# on OS X. See https://github.com/brikis98/docker-osx-dev for more info.
+# on OS X. See https://github.com/nickology/docker-osx-dev for more info.
+#
+# Original forked project: https://github.com/brikis98/docker-osx-dev for more info.
 
 set -e
 
@@ -44,10 +46,10 @@ readonly BOOT2DOCKER_USER="docker"
 # docker-compose constants
 readonly DEFAULT_COMPOSE_FILE="docker-compose.yml"
 
-# Sync and watch constants
+# Sync and watch constantsDEFAULT_IGNORE_FILE
 readonly DEFAULT_PATHS_TO_SYNC="."
 readonly DEFAULT_EXCLUDES=".git"
-readonly DEFAULT_IGNORE_FILE=".dockerignore"
+readonly DEFAULT_IGNORE_FILE="rsync_ignore"
 readonly RSYNC_FLAGS="--archive --log-format 'Syncing %n: %i' --delete --omit-dir-times --inplace --whole-file"
 
 # Global variables. The should only ever be set by the corresponding
