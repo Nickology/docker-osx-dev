@@ -51,7 +51,7 @@ readonly DEFAULT_PATHS_TO_SYNC="."
 # readonly DEFAULT_EXCLUDES=".git"
 readonly DEFAULT_EXCLUDES=".blablabla"
 readonly DEFAULT_IGNORE_FILE="rsync_ignore"
-readonly RSYNC_FLAGS="--archive --log-format 'Syncing %n: %i' --delete --omit-dir-times --inplace --whole-file"
+readonly RSYNC_FLAGS="--archive --links --log-format 'Syncing %n: %i' --delete --omit-dir-times --inplace --whole-file"
 
 ## Reverting back to the above settings. The below line prevents items to be deleted from inner container
 # readonly RSYNC_FLAGS="--archive --log-format 'Syncing %n: %i' --omit-dir-times --inplace --whole-file"
