@@ -50,7 +50,7 @@ readonly DEFAULT_COMPOSE_FILE="docker-compose.yml"
 readonly DEFAULT_PATHS_TO_SYNC="."
 # readonly DEFAULT_EXCLUDES=".git"
 readonly DEFAULT_EXCLUDES=".blablabla"
-readonly DEFAULT_IGNORE_FILE="rsync_ignore"
+readonly DEFAULT_IGNORE_FILE="rsync_ignore_start"
 
 readonly RSYNC_FLAGS="--archive --links --log-format 'Syncing %n: %i' --omit-dir-times --inplace --whole-file --no-perms --no-owner --no-group"
 
